@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Kryptonite by ashu</title>
+    <link rel="stylesheet" href="Batman.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Project Kryptonite by ashu</h1>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="Kryptonite.html">Superman</a></li>
+            <li class="nav-link dropdown-parent-first">
+                <a href="#">Superman in</a>
+                <ul class="dropdown-first">
+                    <li><a href="Movies.html">Movies</a></li>
+                    <li><a href="#">Cartoons</a></li>
+                    <li><a href="Comics.html">Comics</a></li>
+                </ul>
+            </li>
+            <li class="nav-link dropdown-parent-first">
+                <a href="Allies.html">Allies</a>
+               <!-- <ul class="dropdown-first">
+                    <li><a href="Batman.html">Batman</a></li>
+                    <li><a href="WonderWoman.html">Wonder Woman</a></li>
+                    <li><a href="Flash.html">Flash</a></li>
+                    <li><a href="supergirl.html">Super Girl</a></li>
+                    <li><a href="cyborg.html">Cyborg</a></li>
+                   
+                </ul>-->
+            </li>
+            
+            
+            <li class="nav-link"><a href="#">Villains</a></li>
+           
+        </ul>
+    </nav>
+    <h3 class="heading">Batman</h3>
+    <img src="images/Batman.png" alt="">
+    <p class="about-batman">Batman is a superhero appearing in American comic books published by DC Comics. The
+        character was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of the comic book
+        Detective Comics on March 30, 1939. In the DC Universe continuity, Batman is the alias of Bruce Wayne, a wealthy
+        American playboy, philanthropist, and industrialist who resides in Gotham City. Batman's origin story features
+        him swearing vengeance against criminals after witnessing the murder of his parents Thomas and Martha as a
+        child, a vendetta tempered with the ideal of justice. He trains himself physically and intellectually, crafts a
+        bat-inspired persona, and monitors the Gotham streets at night. Kane, Finger, and other creators accompanied
+        Batman with supporting characters, including his sidekicks Robin and Batgirl; allies Alfred Pennyworth, James
+        Gordon, and Catwoman; and foes such as the Penguin, the Riddler, Two-Face, and his archenemy, the Joker.
+
+        Kane conceived Batman in early 1939 to capitalize on the popularity of DC's Superman; although Kane frequently
+        claimed sole creation credit, Finger substantially developed the concept from a generic superhero into something
+        more bat-like. The character received his own spin-off publication, Batman, in 1940. Batman was originally
+        introduced as a ruthless vigilante who frequently killed or maimed criminals, but evolved into a character with
+        a stringent moral code and strong sense of justice. Unlike most superheroes, Batman does not possess any
+        superpowers, instead relying on his intellect, fighting skills, and wealth. The 1960s Batman television series
+        used a camp aesthetic, which continued to be associated with the character for years after the show ended.
+        Various creators worked to return the character to his darker roots in the 1970s and 1980s, culminating with the
+        1986 miniseries The Dark Knight Returns by Frank Miller.</p>
+
+    <h3 class="heading">Creation</h3>
+    <p class="about-batman"> In early 1939, the success of Superman in Action Comics prompted editors at National Comics
+        Publications (the future DC Comics) to request more superheroes for its titles. In response, Bob Kane created
+        "the Bat-Man". Collaborator Bill Finger recalled that "Kane had an idea for a character called 'Batman,' and
+        he'd like me to see the drawings. I went over to Kane's, and he had drawn a character who looked very much like
+        Superman with kind of ...reddish tights, I believe, with boots ...no gloves, no gauntlets ...with a small domino
+        mask, swinging on a rope. He had two stiff wings that were sticking out, looking like bat wings. And under it
+        was a big sign ...BATMAN". The bat-wing-like cape was suggested by Bob Kane, inspired as a child by Leonardo
+        da Vinci's sketch of an ornithopter flying device.
+
+        Finger suggested giving the character a cowl instead of a simple domino mask, a cape instead of wings, and
+        gloves; he also recommended removing the red sections from the original costume. Finger said he
+        devised the name Bruce Wayne for the character's secret identity: "Bruce Wayne's first name came from Robert the
+        Bruce, the Scottish patriot. Wayne, being a playboy, was a man of gentry. I searched for a name that would
+        suggest colonialism. I tried Adams, Hancock ...then I thought of Mad Anthony Wayne." He later said his
+        suggestions were influenced by Lee Falk's popular The Phantom, a syndicated newspaper comic-strip character with
+        which Kane was also familiar.</p>
+
+</body>
+<script>
+
+
+    $('.dropdown-parent-first').click(function () {
+        $(this).find('.dropdown-first').toggleClass('active');
+    })
+</script>
+</html>

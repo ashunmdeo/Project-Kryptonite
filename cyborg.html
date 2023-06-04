@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cyborg.css">
+    <title>Project Kryptonite by ashu</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Project Kryptonite by ashu</h1>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="Kryptonite.html">Superman</a></li>
+            <li class="nav-link dropdown-parent-first">
+                <a href="#">Superman in</a>
+                <ul class="dropdown-first">
+                    <li><a href="Movies.html">Movies</a></li>
+                    <li><a href="#">Cartoons</a></li>
+                    <li><a href="Comics.html">Comics</a></li>
+                </ul>
+            </li>
+            <li class="nav-link dropdown-parent-first">
+                <a href="Allies.html">Allies</a>
+               <!-- <ul class="dropdown-first">
+                    <li><a href="Batman.html">Batman</a></li>
+                    <li><a href="WonderWoman.html">Wonder Woman</a></li>
+                    <li><a href="Flash.html">Flash</a></li>
+                    <li><a href="supergirl.html">Super Girl</a></li>
+                    <li><a href="cyborg.html">Cyborg</a></li>
+
+                </ul>-->
+            </li>
+
+
+            <li class="nav-link"><a href="#">Villains</a></li>
+           
+        </ul>
+    </nav>
+    <h3 class="heading">Cyborg</h3>
+    <img class="img" src="images/cyborg.png" alt>
+    <p class="sorry">Sorry CYBORG... I don't like you, that's why i didn't write anything!</p>
+    <p>If want to know about CYBORG, Please
+        <a href="https://www.google.com/search?q=cyborg&bih=610&biw=1366&hl=en&sxsrf=APwXEddOyqLclx6oWf7hjzCNEXiObU3ivQ%3A1685027837181&ei=_XtvZIHbCsjw4-EPy6Sb4Ag&oq=cyborg&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgBMggIABCKBRCRAjIKCAAQigUQsQMQQzIHCAAQigUQQzIICAAQigUQkQIyBwgAEIoFEEMyDQguENQCELEDEIoFEEMyBwgAEIoFEEMyBwgAEIoFEEMyBwguEIoFEEMyCwgAEIAEELEDEIMBOgcIIxDqAhAnOhAIABDjBBDpBBDqAhC0AhgBOhcIABADEI8BEOoCELQCEAoQjAMQ5QIYAjoVCAAQAxCPARDqAhC0AhCMAxDlAhgCOhUILhADEI8BEOoCELQCEIwDEOUCGAI6BwgjEIoFECc6BAgjECc6CgguEIoFENQCEEM6EAguEIoFELEDEIMBENQCEEM6DQgAEIoFELEDEIMBEEM6EwguEIoFELEDEIMBEMcBENEDEEM6CwgAEIoFELEDEIMBOg0ILhCDARCxAxCKBRBDOhAIABCABBAUEIcCELEDEIMBOgsIABCKBRCxAxCRAjoOCC4Q1AIQsQMQigUQkQI6CwguEIAEEMcBEK8BOgcIABCABBAKSgQIQRgAUMQHWI40YK5KaAZwAXgAgAGfA4gBvBaSAQkwLjMuNC4zLjGYAQCgAQGwARTAAQHaAQYIARABGAHaAQYIAhABGAs&sclient=gws-wiz-serp"
+            target="_blank">CLICK
+            HERE</a>
+    </p>
+
+</body>
+<script>
+
+    $('.dropdown-parent-first').click(function () {
+        $(this).find('.dropdown-first').toggleClass('active');
+    })
+</script>
+</html>

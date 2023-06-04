@@ -1,0 +1,4 @@
+1. Dont use space between words in the file name.
+2. Always clean your directory like images in the images folder and css in the css folder.
+3. Delete unwanted images or files
+4. 
