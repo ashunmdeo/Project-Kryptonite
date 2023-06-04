@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="Kryptonite.css">
     <title>Project Kryptonite by ashu</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Pangolin&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <audio id="beep" preload="auto">
-        <source src="beep.mp3">
-    </audio>
+    <img class="body-background" src="./images/Superman_normal_background.jpg" alt="">
     <nav class="navbar">
         <h1>Project Kryptonite by ashu</h1>
         <ul class="nav-links">
@@ -41,13 +44,12 @@
 
             <li class="nav-link"><a href="#">Villains</a></li>
 
-        </ul>
-        <li class="nav-link">
-            <label class="switch" style="vertical-align: middle;">
-                <input type="checkbox" checked>
-                <span class="slider round"></span>
-            </label>
-        </li>
+            <li class="nav-link">
+                <label class="switch" style="vertical-align: middle;">
+                    <input id="black-switch" checked type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </li>
         </ul>
 
 
@@ -55,18 +57,10 @@
 
     </nav>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Pangolin&family=Roboto+Condensed:wght@300&display=swap"
-        rel="stylesheet">
-
     <div class="Did-you-know">?</div>
 
     <h3 class="heading-1">About Superman</h3>
-    <img src="images/about superman2.png" alt="">
-    <!-- <div id="main_content">Slider 1</div>
-    <div id="secondary_content">Slider 2</div> -->
+    <img id="superman-img" src="./images/about superman2.png" alt="">
     <p class="about-superman">Superman is a superhero who appears in American comic books published by DC Comics. The
         character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics
         #1 (cover-dated June 1938 and published April 18, 1938). Superman has been adapted to a number of other
@@ -118,7 +112,7 @@
 
     <img class="img-2" src="./images/superman-fight.png" alt="">
 
-   <!-- <h3 class="heading-2">Kryptonite</h3>
+    <!-- <h3 class="heading-2">Kryptonite</h3>
     <p class="about-superman1">Kryptonite is a fictional material that appears primarily in Superman stories published by
         DC Comics. In its best-known form, it is a green, crystalline material originating from Superman's home world of
         Krypton that emits a unique, poisonous radiation that can weaken and even kill Kryptonians. Kryptonite radiation
@@ -134,15 +128,43 @@
     <img class-->
 </body>
 <script>
-    var beepOne = $("#beep")[0];
-    $("nav")
-        .click(function () {
-            beepOne.play();
-        });
-
     $('.dropdown-parent-first').click(function () {
         $(this).find('.dropdown-first').toggleClass('active');
-    })
+    });
+
+    $('#black-switch').change(function () {
+        if ($(this).is(':checked')) {
+            $('.body-background').fadeOut('fast', function () {
+                $('.body-background').attr('src', './images/Superman_normal_background.jpg');
+                $('.body-background').fadeIn('fast');
+            });
+
+            $('#superman-img').fadeOut('fast', function () {
+                $('#superman-img').attr('src', './images/about superman2.png');
+                $('#superman-img').fadeIn('fast');
+            });
+            $('.nav-link,.dropdown-first').removeClass('nav-black');
+        } else {
+            $('.body-background').fadeOut(function () {
+                $('.body-background').attr('src', './images/Superman_dark_background.jpg');
+                $('.body-background').fadeIn('fast');
+            });
+
+            $('#superman-img').fadeOut('fast', function () {
+                $('#superman-img').attr('src', './images/Black-superman.png');
+                $('#superman-img').fadeIn('fast');
+            });
+            $('.nav-link,.dropdown-first').addClass('nav-black');
+        }
+    });
+
+
+    $(document).click(function () {
+        var container = $(".dropdown-first");
+        if (!container.is(event.target) && !container.has(event.target).length) {
+            container.removeClass('active');
+        }
+    });
 
 </script>
 

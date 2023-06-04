@@ -1,149 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto+Condensed:wght@300&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    cursor: url('Superman.png'), url('Superman.jpg'), auto !important;
-    font-family: 'poppins', 'sens-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('Superman.png'), url('Superman.jpg'), auto !important;
+  font-family: 'poppins', 'sens-serif';
 }
 
 
 body {
-    color: #ededed;
-    background-image: url('./images/Superman_normal_background.jpg');
-    background-repeat: no-repeat;
-    background-position-x: 100%;
-    background-position-y: 0%;
-    background-size: cover;
-    background-attachment: fixed;
+  background: black;
+  color: #ededed;
+  z-index: 1;
+  /* background-image: url('./images/Superman_normal_background.jpg');
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0%;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+.body-background {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.logo {
+  width: 5%;
+  margin: auto 0;
 }
 
 
-.Did-you-know  {
-    display: inline;
-    border: 15px solid rgb(17, 122, 241);
-    border-radius: 0 25px 25px 0;
-    position: fixed;
-    width: auto;
-    margin-top: 250px;
-    background-color: rgb(17, 122, 241);
-    cursor: pointer;
-    transition: 0.3s;
+.Did-you-know {
+  display: inline;
+  border: 15px solid rgb(17, 122, 241);
+  border-radius: 0 25px 25px 0;
+  position: fixed;
+  width: auto;
+  margin-top: 250px;
+  background-color: rgb(17, 122, 241);
+  cursor: pointer;
+  transition: 0.3s;
 
-    
+
 }
 
 .Did-you-know:hover {
   left: 9px;
-  background-color: rgb(17, 122, 241) ;
+  background-color: rgb(17, 122, 241);
   cursor: pointer;
 }
 
 
 
 .navbar {
-    width: 100%;
-    background-color: transparent;
-    height: 75px;
-    line-height: 75px;
-    padding: 0px 120px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
+  width: 100%;
+  background-color: transparent;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .navbar h1 {
-    font-size: 32px;
-    font-family: poppins, sans-serif;
-    color: #fff;
-    float: left;
+  font-size: 32px;
+  font-family: poppins, sans-serif;
+  color: #fff;
+  float: left;
 }
 
 .navbar .nav-links {
-    float: right;
+  float: right;
 }
 
 .navbar .nav-links .nav-link {
-    display: inline-block;
-    list-style: none;
-    position: relative;
+  display: inline-block;
+  list-style: none;
+  position: relative;
 }
 
 .navbar .nav-links .nav-link>a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    padding: 0px 16px;
-    display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  padding: 0px 16px;
+  display: block;
 
 }
 
 .navbar .nav-links .nav-link>a:hover {
-    background-color: #3f5ec3c3;
-    opacity: 0.68;
+  background-color: #3f5ec3c3;
+  opacity: 0.68;
+}
+
+.navbar .nav-links .nav-link.nav-black>a:hover {
+  background-color: gray;
+  opacity: 0.68;
 }
 
 .dropdown-first {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #3f5ec3c3;
-    min-width: 100%;
-    width: max-content;
-    visibility: hidden;
-    opacity: 0.68;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3f5ec3c3;
+  min-width: 100%;
+  width: max-content;
+  visibility: hidden;
+  opacity: 0.68;
+}
+
+.dropdown-first.nav-black {
+  background-color: gray;
 }
 
 .dropdown-first li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    height: 40px;
-    padding: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  padding: 0px 5px;
 }
 
 .dropdown-first li>a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 .dropdown-first li:hover {
-    background-color: #828db3;
+  background-color: #828db3;
 }
 
 .active {
-    visibility: visible;
+  visibility: visible;
 }
 
 .heading-1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    padding-left: 120px;
-    padding-top: 95px;
-    font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  padding-left: 120px;
+  padding-top: 95px;
+  font-size: 25px;
 }
 
 .about-superman {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 28px;
-    font-family: 'Bruno Ace SC', cursive;
-    font-family: 'Pangolin', cursive;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 17px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 28px;
+  font-family: 'Bruno Ace SC', cursive;
+  font-family: 'Pangolin', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 17px;
 }
 
 .heading-2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    padding-top: 80px;
+  font-weight: 600;
+  padding-top: 80px;
 }
 
 .about-superman1 {
@@ -151,18 +174,18 @@ body {
 }
 
 .about-superman-class {
-    text-align: justify;
+  text-align: justify;
 
 }
 
-img {
-    float: right;
+#superman-img {
+  float: right;
 }
 
 
 .img-2 {
   float: left;
-  
+
 }
 
 .img-2:hover {
@@ -235,4 +258,3 @@ input:checked+.slider:before {
 #secondary_content {
   display: none;
 }
-
