@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('Batman_cover.jpg'), url('Batman_cover.jpg'), auto !important;
     font-family: 'poppins', 'sens-serif';
 }
 
@@ -109,6 +108,7 @@ body {
     font-size: 25px;
 }
 
+
 .flash {
     padding-left: 120px;
     padding-right: 120px;
@@ -126,9 +126,13 @@ img {
 }
 
 .F {
-    float: right;
     height: 380px;
-    padding-right: 20px;
+    float: left;
+}
+
+.F:hover {
+  padding-left:750px;
+  transition: 1.00s;
 }
 
 .switch {

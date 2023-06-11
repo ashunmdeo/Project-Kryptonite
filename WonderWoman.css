@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('Batman_cover.jpg'), url('Batman_cover.jpg'), auto !important;
     font-family: 'poppins', 'sens-serif';
 }
 
@@ -12,7 +11,7 @@
 body {
     background: #081b29;
     color: #ededed;
-    background-image: url('./images/WW_blackcover.jpg');
+    background-image: url('https://wallpaperaccess.com/full/3920544.jpg');
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 0%;
@@ -134,6 +133,7 @@ body {
 img {
     float: right;
     height: 780px; 
+    padding-right: 20px;
 }
 
 .wonder {

@@ -25,24 +25,16 @@
                 <a href="#">Superman in</a>
                 <ul class="dropdown-first">
                     <li><a href="Movies.html">Movies</a></li>
-                    <li><a href="#">Cartoons</a></li>
                     <li><a href="Comics.html">Comics</a></li>
                 </ul>
             </li>
-            <li class="nav-link dropdown-parent-first">
+            <li class="nav-link">
                 <a href="Allies.html">Allies</a>
-                <!-- <ul class="dropdown-first">
-                    <li><a href="Batman.html">Batman</a></li>
-                    <li><a href="WonderWoman.html">Wonder Woman</a></li>
-                    <li><a href="Flash.html">Flash</a></li>
-                    <li><a href="supergirl.html">Super Girl</a></li>
-                    <li><a href="cyborg.html">Cyborg</a></li>
 
-                </ul>-->
             </li>
 
 
-            <li class="nav-link"><a href="#">Villains</a></li>
+            <!--<li class="nav-link"><a href="#">Villains</a></li>-->
 
             <li class="nav-link">
                 <label class="switch" style="vertical-align: middle;">
@@ -130,7 +122,7 @@
 <script>
     $('.dropdown-parent-first').click(function () {
         $(this).find('.dropdown-first').toggleClass('active');
-    });
+    })
 
     $('#black-switch').change(function () {
         if ($(this).is(':checked')) {
@@ -159,12 +151,13 @@
     });
 
 
-    $(document).click(function () {
-        var container = $(".dropdown-first");
-        if (!container.is(event.target) && !container.has(event.target).length) {
-            container.removeClass('active');
-        }
-    });
+    // $(document).click(function (event) {
+    //     var container = $(".dropdown-first");
+    //     var container2 = $(".dropdown-parent-first");
+    //     if (!container.is(event.target) && !container.has(event.target).length && !container.is(event.target) && !container.has(event.target).length) {
+    //         container.removeClass('active');
+    //     }
+    // });
 
 </script>
 

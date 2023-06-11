@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('batman_logo.png'), url('batman_logo.png'), auto !important;
     font-family: 'poppins', 'sens-serif';
 }
 
@@ -125,4 +124,8 @@ body {
 img {
     float: left;
     height: 700px; 
+}
+
+.logo {
+    justify-content: center;
 }

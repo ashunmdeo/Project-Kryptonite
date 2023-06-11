@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Flash.css">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <title>Project Kryptonite by ashu</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
 </head>
 
 <body>
@@ -19,30 +20,20 @@
                 <a href="#">Superman in</a>
                 <ul class="dropdown-first">
                     <li><a href="Movies.html">Movies</a></li>
-                    <li><a href="#">Cartoons</a></li>
                     <li><a href="Comics.html">Comics</a></li>
                 </ul>
             </li>
             <li class="nav-link dropdown-parent-first">
                 <a href="Allies.html">Allies</a>
-              <!--  <ul class="dropdown-first">
-                    <li><a href="Batman.html">Batman</a></li>
-                    <li><a href="WonderWoman.html">Wonder Woman</a></li>
-                    <li><a href="Flash.html">Flash</a></li>
-                    <li><a href="supergirl.html">Super Girl</a></li>
-                    <li><a href="cyborg.html">Cyborg</a></li>
 
-                </ul>-->
             </li>
 
 
-            <li class="nav-link"><a href="#">Villains</a></li>
-    
+            <!-- <li class="nav-link"><a href="#">Villains</a></li>-->
+            <li class="nav-link">
+
+            </li>
         </ul>
-        <label class="switch">
-            <input type="checkbox" checked>
-            <span class="slider round"></span>
-          </label>
     </nav>
     <h3 class="heading">The Flash</h3>
     <img src="images/flash-2.png" alt="">
@@ -80,7 +71,6 @@
         Animated Original Movies series.</p>
 
     <h3 class="heading">Barry Allen</h3>
-    <img class="F" src="images/Flash-1.png">
     <p class="flash">Barry Allen is an assistant scientist from the Criminal and Forensic Science Division of Central
         City Police Department. Barry had a reputation for being very slow, deliberate, and frequently late, which
         frustrated his fiancée, Iris West. One night, as he was preparing to leave work, a freak lightning bolt struck a
@@ -97,6 +87,7 @@
         after followed by a new volume of The Flash ongoing series, where Barry's adventures as the Scarlet Speedster
         were published until 2020.</p>
 
+    <img class="F" src="images/Flash-1.png">
 
 </body>
 <script>
@@ -104,5 +95,10 @@
     $('.dropdown-parent-first').click(function () {
         $(this).find('.dropdown-first').toggleClass('active');
     })
+
+
+
+
 </script>
+
 </html>
